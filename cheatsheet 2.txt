@@ -1,0 +1,44 @@
+----------------------------prints
+print("contenido",variable)
+----------------------------input de usuario
+variable=input(float("Ingrese numero: "))
+cambiar el float por el tipo de variable, int, float string o boolean
+----------------------------If, else
+if resultado == 0:
+contenido
+else:
+contenido del else
+
+////////// podemos haer los valores aparte
+ej:
+
+vota=edad>=18 and edad<=70 and distancia<=500
+if vota:
+sasasa
+else:
+
+
+----------------------------Else if
+elif resultado:
+contenido
+
+
+
+----------------------------While
+while(i<=n):
+    suma=suma+i
+    #print(i,suma)
+    i=i+1
+
+----------------------------do while
+
+----------------------------cadenas
+
+-----------------------------import math
+import math
+math.sqr(numero) #raiz cuadrada
+math.exp(1) #exponente
+math.pi #pi
+math.log(2) #logaritmo
+
+"*"*10 ##multiplica por 10 el contenido de una cadena
