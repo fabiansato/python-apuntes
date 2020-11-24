@@ -22,6 +22,18 @@ numero = 10
 Valor = True
 Valor = False
 ```
+
+### entrada de datos 
+```python
+nombre = input("mensaje al usuario")
+```
+el input te lo guarda como cadena
+entonces podemos asingnar el tipo antes de poner el input
+```python
+numero = int(input("ingresar un numero"))
+```
+cambiar el float por el tipo de variable, int, float string o boolean
+
 ------------------------------
 ## Mostrar datos por pantalla
 #### Imprimir un string
@@ -203,31 +215,6 @@ otra forma desde las ultimas actualizaciones de python:
 print(f"Hola {nombre} tienes {edad} años")
 ```
 
-### entrada de datos 
-```python
-nombre = input("mensaje al usuario")
-```
-el input te lo guarda como cadena
-entonces podemos asingnar el tipo antes de poner el input
-```python
-numero = int(input("ingresar un numero"))
-```
-cambiar el float por el tipo de variable, int, float string o boolean
-----------------------------
-###Funciones integradas
-sirven para hacer conversiones entre tipos de datos
-```python
-n = int(10)
-n = float(10)
-n = str("10")
-n = bin(1)
-n = hex(10F)
-n = int("010",2) #convierte un binario a entero
-n = int("0xa",16) #convierte un numero hexa en base 16 a int
-n = abs(-8) #devuelve un balor absoluto de -8
-n = round (5.6) #lo redondea al numero entero mas cercano
-n = len("fabian") #muestra cuantas caracteres tiene el string
-```
 
 
 ----------------------------
@@ -268,7 +255,7 @@ for i in range (1,11,2):
 ```
 El antarior codigo es for variable _i_ en el rango de iniciacion en 1, hasta 11 con salteos de 2. El último numero no se incluye.
 
-## El range(min_value, max_value)
+### Condicional for range(min_value, max_value)
 función range(min_value, max_value) genera una secuencia con números min_value , min_value + 1 , ..., max_value - 1 . El último número no está incluido. 
 
 
@@ -306,6 +293,25 @@ for i in range(10, 0, -2):
 # 4
 # 2
 ```
+
+
+----------------------------
+### FUNCIONES
+#### Funciones integradas
+sirven para hacer conversiones entre tipos de datos
+```python
+n = int(10)
+n = float(10)
+n = str("10")
+n = bin(1)
+n = hex(10F)
+n = int("010",2) #convierte un binario a entero
+n = int("0xa",16) #convierte un numero hexa en base 16 a int
+n = abs(-8) #devuelve un balor absoluto de -8
+n = round (5.6) #lo redondea al numero entero mas cercano
+n = len("fabian") #muestra cuantas caracteres tiene el string
+```
+
 
 ---------------------------------
 ### Strings de caracteres
