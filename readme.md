@@ -1,14 +1,5 @@
-introduccion de lo que se va a hablar.
-caracteristicas
-y vamos al video
--multiparadigma
--mulatiplataformas
--es sencillo de aprender.
+####imprimir un string
 
-imperactiva 
--------------------
-3- hola mundo
-****imprimir un string
 print("hola mundo")
 
 ****salto de linea 
