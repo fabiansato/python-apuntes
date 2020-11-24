@@ -454,7 +454,6 @@ for caracter in a:
 
 
 -----------------------------
-
 ### FUNCIONES
 ```python
 de f NOMBRE( LISTA DE PARAMETROS ) :
@@ -470,4 +469,44 @@ Pasar variables por argumentos:
 ```python
 argumento = "Nunca digas nunca."
 imprimirDosVeces ( argumento )
+```
+
+-----------------------------
+### LISTAS
+cracion de listas:
+```python
+lista = [7; 3; 4; 6; 10]
+```
+longitud de lista:
+```python
+len(lista)
+```
+agregar un elemento al nal de la lista:
+```python
+lista:append(2)
+```
+quitar elementos de la lista:
+```python
+lista.pop(3)
+#quita el tercer elemento de la lista empezando por 0
+```
+mostrar toda la lista por pantalla:
+```python
+print(lista)
+```
+
+Recorrer listas:
+```python
+animales = [''gato'', ''perro'', ''raton'']
+i = 0
+#forma 1
+while (i < len(animales)):
+print(animales[i])
+i = i + 1
+#forma 2
+for i in range(len(animales)):
+print (animales[i])
+#forma 3
+for elemento in animales:
+print (elemento)
 ```
