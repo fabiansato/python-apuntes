@@ -1,4 +1,9 @@
-####imprimir un string
+## Cheatsheet + Documentación Python
+
+Este es un cheatsheet mas de python? No. Este cheatshet tambien contiene un wiki con la documentación mas importante de python acá:
+[Wiki Documentación Python](../wiki)
+
+#### Imprimir un string
 
 print("hola mundo")
 
