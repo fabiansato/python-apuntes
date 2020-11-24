@@ -108,12 +108,13 @@ ejemplo:
 ```
 
 #### prioridad de los operadores aritmeticos
-
+```python
 1. parentesis ()
 2. exponenciacion **
 3. multiplicacion, division, modulo *, / , %, NOT
 4. suma y resta +, -, AND
-5. >, <, ==, >=, <=, !=, or 
+5.  >, <, ==, >=, <=, !=, or 
+```
 
 ----------------------------------------
 ### Operadores relacionales
@@ -355,6 +356,19 @@ f.write("no es hermoso?\n")
 f.close()
 ```
 
+-----------------------------
+### BIBLOTECAS
+#### biblioteca import math
+```python
+import math
+math.sqr(numero) #raiz cuadrada
+math.exp(1) #exponente
+math.pi #pi
+math.log(2) #logaritmo
+
+"*"*10 ##multiplica por 10 el contenido de una cadena
+```
+
 ----------------------------
 ### Biblioteca Random
 Debemos importar la biblioteca para utilizar sus funciones de trabajos aleatorios.
@@ -440,14 +454,20 @@ for caracter in a:
 
 
 -----------------------------
-### Funcionales matematicas
-#### Función import math
-```python
-import math
-math.sqr(numero) #raiz cuadrada
-math.exp(1) #exponente
-math.pi #pi
-math.log(2) #logaritmo
 
-"*"*10 ##multiplica por 10 el contenido de una cadena
+### FUNCIONES
+```python
+de f NOMBRE( LISTA DE PARAMETROS ) :
+SENTENCIAS
+```
+ejemplo:
+```python
+de f mostrarGuion ( ) :
+pr int ( "-" , end="" )
+```
+
+Pasar variables por argumentos:
+```python
+argumento = "Nunca digas nunca."
+imprimirDosVeces ( argumento )
 ```
