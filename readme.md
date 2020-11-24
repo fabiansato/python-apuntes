@@ -14,6 +14,14 @@ numericos, booleanos, textos
 ```python
 numero = 10
 ```
+
+
+
+#### Datos booleanos
+```python
+Valor = True
+Valor = False
+```
 ------------------------------
 ## Mostrar datos por pantalla
 #### Imprimir un string
@@ -38,11 +46,14 @@ ingresar comillas simples dentro de comillas dobles:
 variable = "la verdad o 'la verdad'"
 ```
 
-#### Datos booleanos
+
+### Separadores en print
+Podemos separar internamente datos con la palabra clave "sep=" y terminar con "end="
 ```python
-Valor = True
-Valor = False
+print(1, 2, 3, sep=', ', end='. ')
+print(4, 5, 6, sep=' * ', end='.')
 ```
+
 
 #### concatener
 ```python
@@ -66,6 +77,7 @@ print (valor)
 ''' comentario multilinea
 esto es un comentario multinea ***
 ```
+----------------------------------------
 ### operadores aritmeticos
 
 ```python
@@ -84,14 +96,15 @@ ejemplo:
 ```
 
 #### prioridad de los operadores aritmeticos
-```python
-parentesis ()
-exponenciacion **
-multiplicacion, division, modulo *, / , %
-suma y resta +, -
-```
 
-### oepradores relacionales
+1. parentesis ()
+2. exponenciacion **
+3. multiplicacion, division, modulo *, / , %, NOT
+4. suma y resta +, -, AND
+5. >, <, ==, >=, <=, !=, or 
+
+----------------------------------------
+### Operadores relacionales
 se utilizan para establecer una relacion entre 2 valores
 compara estos valores entre si y esta comparacion produce 
 un resultado de certeza o falsedad (verdaderos o falsos)
@@ -125,43 +138,48 @@ valor1 | AND | valor2  | Resultado
 ------------ | ------------- |------------- |------------- |
 TRUE | AND | TRUE  | TRUE
 TRUE | AND | FALSE  | FALSE
-FALSE | AND | TRUE  | TRUE
+FALSE | AND | TRUE  | FALSE
 FALSE | AND | FALSE  | FALSE
 
 
-Donde sea 2 verderos hay verdadero, sin todo es falso
+_Solamente basta un false para que el resultado sea false_
 
-/*/*/*operando OR
-true and true = true
-true and false = true
-false and true = true
-false and false = false
-Solo basta tener 1 solo verdadero para tener todos verdaderos 
+#### operando OR
 
-***Operador de NOT negacion.
+valor1 | AND | valor2  | Resultado
+------------ | ------------- |------------- |------------- |
+TRUE | AND | TRUE  | TRUE
+TRUE | AND | FALSE  |  TRUE
+FALSE | AND | TRUE  | TRUE
+FALSE | AND | FALSE  | FALSE
+
+_Solamente es falso cuando ambos son false false (0 y 0)_
+
+
+#### Operador de NOT negacion.
+```python
 not(true) = false
 not(false) = true 
+```
 
-/*/*/Prioridad de los operadores logicos
+#### Prioridad de los operadores logicos
+
 1. NOT
 2- AND
 3- OR 
 
-Ejemplo 
+
+Ejemplo:
+```python
 ((a>b) or (a<c))and((a==c) or (a>=b))
+```
 
 aqui tenemos que pensarlo 
 Es muy bueno para hacer matematica discreta.
 
 
-/*/*/*Pririedades de operadores en general
-1. ()
-2. **
-3 *,/,mod %,not
-4. +,-,and 
-5. >, <, ==, >=, <=, !=, or 
-
--------------------------------- Operadores de asignacion
+--------------------------------
+## Operadores de asignacion
 a = 5 
 a += 5 #suma en asignaciòn.
 a -= 2 #resta en asignacion
@@ -171,22 +189,34 @@ a **=8 #potencia en asignicacion
 a %=6 #modulo de la asignicion 
 valores que sirven para acortar el código.
 
------------------------------10 salidas de datos
+-----------------------------
+### salidas de datos
+```python
 print("hola",nombre,"tienes: ",edad,"años")
-con funciones
+```
+con funciones:
+```python
 print("hola {} tienes {} años".format(nombre,edad)
+```
 otra forma desde las ultimas actualizaciones de python:
+```python
 print(f"Hola {nombre} tienes {edad} años")
+```
 
------------------------------11 entrada de datos 
-#entrada de datos
+### entrada de datos 
+```python
 nombre = input("mensaje al usuario")
-##el input te lo guarda como cadena
-##entonces podemos asingnar el tipo antes de poner el input
+```
+el input te lo guarda como cadena
+entonces podemos asingnar el tipo antes de poner el input
+```python
 numero = int(input("ingresar un numero"))
-
-----------------------------12 funciones integradas
-#sirven para hacer conversiones entre tipos de datos
+```
+cambiar el float por el tipo de variable, int, float string o boolean
+----------------------------
+###Funciones integradas
+sirven para hacer conversiones entre tipos de datos
+```python
 n = int(10)
 n = float(10)
 n = str("10")
@@ -197,55 +227,37 @@ n = int("0xa",16) #convierte un numero hexa en base 16 a int
 n = abs(-8) #devuelve un balor absoluto de -8
 n = round (5.6) #lo redondea al numero entero mas cercano
 n = len("fabian") #muestra cuantas caracteres tiene el string
+```
 
-----------------------------13 
 
-
-//////////////////
-----------------------------prints
-print("contenido",variable)
-----------------------------input de usuario
-variable=input(float("Ingrese numero: "))
-cambiar el float por el tipo de variable, int, float string o boolean
-----------------------------If, else
+----------------------------
+### CONDICIONALES
+#### Condicionales (If, else)
+```python
 if resultado == 0:
 contenido
 else:
 contenido del else
+```
 
-////////// podemos haer los valores aparte
+_podemos haer los valores aparte_
 ej:
-
+```python
 vota=edad>=18 and edad<=70 and distancia<=500
 if vota:
 sasasa
 else:
-
-
-----------------------------Else if
-elif resultado:
-contenido
+```
 
 
 
-----------------------------While
+#### Condicionales (While)
+```python
 while(i<=n):
     suma=suma+i
     #print(i,suma)
     i=i+1
-
-----------------------------do while
-
-----------------------------cadenas
-
------------------------------import math
-import math
-math.sqr(numero) #raiz cuadrada
-math.exp(1) #exponente
-math.pi #pi
-math.log(2) #logaritmo
-
-"*"*10 ##multiplica por 10 el contenido de una cadena
+```
 
 -------------------------for
 FOR
@@ -282,13 +294,16 @@ for i in range(10, 0, -2):
 # 4
 # 2
 
------------------------print
-Por defecto, la función print() imprime todos sus argumentos separándolos por un espacio y pone un símbolo de línea nueva después de él. Este comportamiento se puede cambiar usando los argumentos de palabras clave sep (separator) y end .
 
-print(1, 2, 3)
-print(4, 5, 6)
-print(1, 2, 3, sep=', ', end='. ')
-print(4, 5, 6, sep=', ', end='. ')
-print()
-print(1, 2, 3, sep='', end=' -- ')
-print(4, 5, 6, sep=' * ', end='.')
+-----------------------------
+### Funcionales matematicas
+#### Función import math
+```python
+import math
+math.sqr(numero) #raiz cuadrada
+math.exp(1) #exponente
+math.pi #pi
+math.log(2) #logaritmo
+
+"*"*10 ##multiplica por 10 el contenido de una cadena
+```
