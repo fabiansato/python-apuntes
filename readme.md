@@ -4,26 +4,32 @@
 [Wiki Documentación Python](https://github.com/fabiansato/python-cheatsheet/wiki "Documentación Python")
 
 ------------------------------
-### tipos de variables
+## Tipos de variables
 #### tres tipos de datos: 
-
+```python
 numericos, booleanos, textos
+```
 
 #### Asignacion de variables
-
+```python
 numero = 10
-
+```
+------------------------------
+## Mostrar datos por pantalla
 #### Imprimir un string
 ```python
 print("hola mundo")
 ```
 
 #### salto de linea 
-
+```python
 \n
+```
 
 #### imprimir el tipo de variable
+```python
 print(type(nombrevariable))
+```
 
 #### mostrar int o float
 Si ponemos un valor entero (int) ej 10 , un valor flotante (float) 10.5
