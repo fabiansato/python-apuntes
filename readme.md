@@ -510,3 +510,26 @@ print (animales[i])
 for elemento in animales:
 print (elemento)
 ```
+
+
+-----------------------------
+### MATRICES (arrays)
+Las matrices en Python son listas de listas.
+se escriben así:
+```python
+[lista0, lista1,...,listaN]
+```
+ejemplo:
+```python
+numeros = [[1,2,4],[4,3,2],[9,8,7],[6,4,3],[5,6,8]]
+	print(numeros[0][2]) # imprime 4
+	print(numeros[3][0]) # imprime 6
+	print(numeros[4][3]) # error
+```
+También podemos imprimir la matriz entera:
+````python
+print(numeros)
+print(numeros[2])
+```
+
+
