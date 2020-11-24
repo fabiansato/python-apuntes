@@ -3,16 +3,7 @@
 ¿Este es un cheatsheet mas de python? No. Este cheatshet tambien contiene un wiki con la documentación mas importante de python acá:
 [Wiki Documentación Python](https://github.com/fabiansato/python-cheatsheet/wiki "Documentación Python")
 
-#### Imprimir un string
-```python
-print("hola mundo")
-```
-
-#### salto de linea 
-
-\n
-
----------------
+------------------------------
 ### tipos de variables
 #### tres tipos de datos: 
 
@@ -22,9 +13,14 @@ numericos, booleanos, textos
 
 numero = 10
 
-### Mostrar por pantalla variable:
+#### Imprimir un string
+```python
+print("hola mundo")
+```
 
-print(numero)
+#### salto de linea 
+
+\n
 
 #### imprimir el tipo de variable
 print(type(nombrevariable))
