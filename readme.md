@@ -471,6 +471,7 @@ argumento = "Nunca digas nunca."
 imprimirDosVeces ( argumento )
 ```
 
+
 -----------------------------
 ### LISTAS (strings)
 cracion de listas:
@@ -530,6 +531,24 @@ También podemos imprimir la matriz entera:
 ````python
 print(numeros)
 print(numeros[2])
+```
+saber la longitud de una variable
+```python
+longitud = len(numeros)
+print (longitud) #imprime 5
+print(len(numeros[2])) #imprime 3
+```
+Agregar datos a un array
+```python
+#por ejemplo
+numeros[2].append(5) 
+agrega un 5 al final de la lista 2
+```
+
+quitar datos en un array:
+```python
+numeros[3].pop(1) 
+elimina la posición 1 de la lista 3
 ```
 
 
