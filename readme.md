@@ -259,33 +259,45 @@ while(i<=n):
     i=i+1
 ```
 
--------------------------for
-FOR
-for i in range (1,11,1):
-#El range(min_value, max_value) función range(min_value, max_value) genera una secuencia con números min_value , min_value + 1 , ..., max_value - 1 . El último número no está incluido. 
+
+#### Condicionales (FOR)
+Se coloca for _variable_ in range (_valor minimo_,_valor maximo_,_sumadevariable_)
+
+```python
+for i in range (1,11,2):
+```
+El antarior codigo es for variable _i_ en el rango de iniciacion en 1, hasta 11 con salteos de 2. El último numero no se incluye.
+
+## El range(min_value, max_value)
+función range(min_value, max_value) genera una secuencia con números min_value , min_value + 1 , ..., max_value - 1 . El último número no está incluido. 
 
 
-#Hay una forma reducida de range () - range(max_value) , en cuyo caso min_value se establece implícitamente en cero:
+### Forma reducida de range () 
+Se realiza de la siguiente manera range(max_value) , en cuyo caso min_value se establece implícitamente en cero:
+```python
 for i in range(3):
     print(i)
 # 0
 # 1
 # 2
+```
 
-#De esta manera, podemos repetir algunas acciones varias veces:
+### De esta manera, podemos repetir algunas acciones varias veces:
+```python
 for i in range(2 ** 2):
     print('Hello, world!')
+```
 
-#secuencia vacia
+#### Ejemplo de secuencia vacia
+```python
 for i in range(-5):
     print('Hello, world!')
+```
 
-for character in 'hello':
-    print(character)
-#separa caracter a caracter
 
-#Para iterar sobre una secuencia decreciente, podemos usar una forma extendida de range () con tres argumentos: range(start_value, end_value, step) . Cuando se omite, el paso es implícitamente igual a 1. Sin embargo, puede ser cualquier valor distinto de cero. El ciclo siempre incluye start_value y excluye end_value durante la iteración:
-
+#### Secuencia decreciente
+Para iterar sobre una secuencia decreciente, podemos usar una forma extendida de range () con tres argumentos: range(start_value, end_value, step) . Cuando se omite, el paso es implícitamente igual a 1. Sin embargo, puede ser cualquier valor distinto de cero. El ciclo siempre incluye start_value y excluye end_value durante la iteración:
+```python
 for i in range(10, 0, -2):
     print(i)
 # 10
@@ -293,7 +305,16 @@ for i in range(10, 0, -2):
 # 6
 # 4
 # 2
+```
 
+---------------------------------
+### Strings de caracteres
+#### separa caracter a caracter
+```python
+for character in 'hello':
+    print(character)
+
+```
 
 -----------------------------
 ### Funcionales matematicas
