@@ -33,34 +33,41 @@ print(type(nombrevariable))
 
 #### mostrar int o float
 Si ponemos un valor entero (int) ej 10 , un valor flotante (float) 10.5
-ingresar comillas simples dentro de comillas dobles
+ingresar comillas simples dentro de comillas dobles:
+```python
 variable = "la verdad o 'la verdad'"
+```
 
 #### Datos booleanos
 Valor = True
 Valor = False
 
 
-
 #### concatener
+```python
 print ("el resultado es: ",resultado)
 colcamos unca coma para concatenar
+```
 
 #### tipado dinamico
 podemos almacenar diferentes tipos de variables
+```python
 valor = 20
 print(valor)
 valor = "Sato"
 print (valor)
-
+```
 
 #### comentarios
-#comentario 
+
+```python
 # esto es un comentario 
 ''' comentario multilinea
-esto es un comentario multiiinea ***
-
+esto es un comentario multinea ***
+```
 ### operadores aritmeticos
+
+```python
 suma +
 resta -
 multiplicar *
@@ -68,43 +75,55 @@ dividir /
 division entero (redondeado para abajo // 
 modulo (que vamos a divir el resto de la division) %
 exponenciacion  **
+```
 
 ejemplo:
+```python
 2**3 * (5/2 + (6*5))
+```
 
 #### prioridad de los operadores aritmeticos
+```python
 parentesis ()
 exponenciacion **
 multiplicacion, division, modulo *, / , %
 suma y resta +, -
-
+```
 
 ### oepradores relacionales
-*se utilizan para establecer una relacion entre 2 valores
-*compara estos valores entre si y esta comparacion produce 
+se utilizan para establecer una relacion entre 2 valores
+compara estos valores entre si y esta comparacion produce 
 un resultado de certeza o falsedad (verdaderos o falsos)
-*tienen el mismo nivel de su evaluacion
-*los operadores relacionales tienen menor prioridad que los aritmeticos
+tienen el mismo nivel de su evaluacion
+los operadores relacionales tienen menor prioridad que los aritmeticos
+```python
 > mayor que
 < menor que
 >= mayor o igual que
 <= menor o igual que
 != diferente (distinto que)
 == igual 
-
+```
+ejemplo:
+```python
 resultado = 10 < 20
 print (resultado)
-
+```
 nos mostrarà verdero o falso.
 
 ----------------------------------------
 ### operadores logicos
-*permuitenb construir expreciones logicas y se obtiene como resultados booleanos
+*permiten construir expreciones logicas y se obtiene como resultados booleanos
 and && (perador de multiplicacion logica)
 or  || (oeperador de suma logica)
 not
 
-/*/*/*operando AND
+#### operando AND
+Cabecera1 | Cabecera 2 
+------------ | -------------
+tabla 1 |  tabla 2
+columna 1 |  columna 2
+
 true and true = true
 true and false = false
 false and true = false
