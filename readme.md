@@ -1,4 +1,4 @@
-## Cheatsheet + Documentación Python🐍
+# Cheatsheet + Documentación Python🐍
 
 ¿Este es un cheatsheet mas de python? No. Este cheatshet tambien contiene un wiki con la documentación mas importante de python acá:
 [Wiki Documentación Python](https://github.com/fabiansato/python-cheatsheet/wiki "Documentación Python")
@@ -8,38 +8,43 @@
 print("hola mundo")
 ```
 
-****salto de linea 
+#### salto de linea 
+
 \n
 
 ---------------
-4- tipos de variables
-/*/*/*tres tipos de datos: 
+### tipos de variables
+#### tres tipos de datos: 
+
 numericos, booleanos, textos
 
-***Asignacion de variables
+#### Asignacion de variables
+
 numero = 10
 
-***Mostrar por pantalla variable:
+### Mostrar por pantalla variable:
+
 print(numero)
 
-***imprimir el tipo de variable
+#### imprimir el tipo de variable
 print(type(nombrevariable))
 
-/*/*/* Si ponemos un valor entero (int) ej 10 , un valor flotante (float) 10.5
+#### mostrar int o float
+Si ponemos un valor entero (int) ej 10 , un valor flotante (float) 10.5
 ingresar comillas simples dentro de comillas dobles
 variable = "la verdad o 'la verdad'"
 
-****Datos booleanos
+#### Datos booleanos
 Valor = True
 Valor = False
 
 
 
-***concatener
+#### concatener
 print ("el resultado es: ",resultado)
 colcamos unca coma para concatenar
 
-***tipado dinamico
+#### tipado dinamico
 podemos almacenar diferentes tipos de variables
 valor = 20
 print(valor)
@@ -47,15 +52,13 @@ valor = "Sato"
 print (valor)
 
 
---------------------------
-5- comentarios
+#### comentarios
 #comentario 
 # esto es un comentario 
 ''' comentario multilinea
 esto es un comentario multiiinea ***
 
-------------------------
-6- operadores aritmeticos
+### operadores aritmeticos
 suma +
 resta -
 multiplicar *
@@ -67,14 +70,14 @@ exponenciacion  **
 ejemplo:
 2**3 * (5/2 + (6*5))
 
-/*/*/*prioridad de los operadores aritmeticos
+#### prioridad de los operadores aritmeticos
 parentesis ()
 exponenciacion **
 multiplicacion, division, modulo *, / , %
 suma y resta +, -
 
 
-7- oepradores relacionales
+### oepradores relacionales
 *se utilizan para establecer una relacion entre 2 valores
 *compara estos valores entre si y esta comparacion produce 
 un resultado de certeza o falsedad (verdaderos o falsos)
@@ -93,7 +96,7 @@ print (resultado)
 nos mostrarà verdero o falso.
 
 ----------------------------------------
-8- operadores logicos
+### operadores logicos
 *permuitenb construir expreciones logicas y se obtiene como resultados booleanos
 and && (perador de multiplicacion logica)
 or  || (oeperador de suma logica)
