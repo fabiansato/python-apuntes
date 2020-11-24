@@ -472,7 +472,7 @@ imprimirDosVeces ( argumento )
 ```
 
 -----------------------------
-### LISTAS
+### LISTAS (strings)
 cracion de listas:
 ```python
 lista = [7; 3; 4; 6; 10]
@@ -481,7 +481,7 @@ longitud de lista:
 ```python
 len(lista)
 ```
-agregar un elemento al nal de la lista:
+agregar un elemento al final de la lista:
 ```python
 lista:append(2)
 ```
