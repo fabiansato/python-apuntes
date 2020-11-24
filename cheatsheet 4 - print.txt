@@ -1,9 +1,0 @@
-Por defecto, la función print() imprime todos sus argumentos separándolos por un espacio y pone un símbolo de línea nueva después de él. Este comportamiento se puede cambiar usando los argumentos de palabras clave sep (separator) y end .
-
-print(1, 2, 3)
-print(4, 5, 6)
-print(1, 2, 3, sep=', ', end='. ')
-print(4, 5, 6, sep=', ', end='. ')
-print()
-print(1, 2, 3, sep='', end=' -- ')
-print(4, 5, 6, sep=' * ', end='.')

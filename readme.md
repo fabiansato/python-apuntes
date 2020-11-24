@@ -177,3 +177,96 @@ n = round (5.6) #lo redondea al numero entero mas cercano
 n = len("fabian") #muestra cuantas caracteres tiene el string
 
 ----------------------------13 
+
+
+//////////////////
+----------------------------prints
+print("contenido",variable)
+----------------------------input de usuario
+variable=input(float("Ingrese numero: "))
+cambiar el float por el tipo de variable, int, float string o boolean
+----------------------------If, else
+if resultado == 0:
+contenido
+else:
+contenido del else
+
+////////// podemos haer los valores aparte
+ej:
+
+vota=edad>=18 and edad<=70 and distancia<=500
+if vota:
+sasasa
+else:
+
+
+----------------------------Else if
+elif resultado:
+contenido
+
+
+
+----------------------------While
+while(i<=n):
+    suma=suma+i
+    #print(i,suma)
+    i=i+1
+
+----------------------------do while
+
+----------------------------cadenas
+
+-----------------------------import math
+import math
+math.sqr(numero) #raiz cuadrada
+math.exp(1) #exponente
+math.pi #pi
+math.log(2) #logaritmo
+
+"*"*10 ##multiplica por 10 el contenido de una cadena
+
+-------------------------for
+FOR
+for i in range (1,11,1):
+#El range(min_value, max_value) función range(min_value, max_value) genera una secuencia con números min_value , min_value + 1 , ..., max_value - 1 . El último número no está incluido. 
+
+
+#Hay una forma reducida de range () - range(max_value) , en cuyo caso min_value se establece implícitamente en cero:
+for i in range(3):
+    print(i)
+# 0
+# 1
+# 2
+
+#De esta manera, podemos repetir algunas acciones varias veces:
+for i in range(2 ** 2):
+    print('Hello, world!')
+
+#secuencia vacia
+for i in range(-5):
+    print('Hello, world!')
+
+for character in 'hello':
+    print(character)
+#separa caracter a caracter
+
+#Para iterar sobre una secuencia decreciente, podemos usar una forma extendida de range () con tres argumentos: range(start_value, end_value, step) . Cuando se omite, el paso es implícitamente igual a 1. Sin embargo, puede ser cualquier valor distinto de cero. El ciclo siempre incluye start_value y excluye end_value durante la iteración:
+
+for i in range(10, 0, -2):
+    print(i)
+# 10
+# 8
+# 6
+# 4
+# 2
+
+-----------------------print
+Por defecto, la función print() imprime todos sus argumentos separándolos por un espacio y pone un símbolo de línea nueva después de él. Este comportamiento se puede cambiar usando los argumentos de palabras clave sep (separator) y end .
+
+print(1, 2, 3)
+print(4, 5, 6)
+print(1, 2, 3, sep=', ', end='. ')
+print(4, 5, 6, sep=', ', end='. ')
+print()
+print(1, 2, 3, sep='', end=' -- ')
+print(4, 5, 6, sep=' * ', end='.')
