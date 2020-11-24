@@ -39,9 +39,10 @@ variable = "la verdad o 'la verdad'"
 ```
 
 #### Datos booleanos
+```python
 Valor = True
 Valor = False
-
+```
 
 #### concatener
 ```python
@@ -119,15 +120,15 @@ or  || (oeperador de suma logica)
 not
 
 #### operando AND
-Cabecera1 | Cabecera 2 
------------- | -------------
-tabla 1 |  tabla 2
-columna 1 |  columna 2
 
-true and true = true
-true and false = false
-false and true = false
-false and false = false
+valor1 | AND | valor2  | Resultado
+------------ | ------------- |------------- |------------- |
+TRUE | AND | TRUE  | TRUE
+TRUE | AND | FALSE  | FALSE
+FALSE | AND | TRUE  | TRUE
+FALSE | AND | FALSE  | FALSE
+
+
 Donde sea 2 verderos hay verdadero, sin todo es falso
 
 /*/*/*operando OR
