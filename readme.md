@@ -356,6 +356,42 @@ f.close()
 ```
 
 ----------------------------
+### Biblioteca Random
+Debemos importar la biblioteca para utilizar sus funciones de trabajos aleatorios.
+```python
+import random
+```
+uso de biblioteca:
+```python
+random.randrange(inico,fin,paso)
+random.randint(inicio,fin)
+
+```
+ejemplo
+```python
+import random
+w=random.randrange(1,100,2)
+print("w es:",w)
+
+```
+ejemplo con for range
+```python
+for i in range(3):
+	w=random.randrange(1,100,2)
+	print("w es:",w)
+    # Por cada iteración obtiene un numero impar  aleatorio entre 1 y 99 .
+Eventualmente podrían llegar a repetirse los números
+
+```
+```python
+import random
+w=random.randint(inicio,fin)
+# Devuelve un entero aleatorio entre inicio y fin incluyendo los extremos.
+
+```
+
+
+----------------------------
 ### FUNCIONES
 #### Funciones integradas
 sirven para hacer conversiones entre tipos de datos
