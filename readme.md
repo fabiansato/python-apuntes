@@ -293,7 +293,67 @@ for i in range(10, 0, -2):
 # 4
 # 2
 ```
+----------------------------
+###  MANEJO DE ARCHIVOS
 
+Abrir archivo de lectura : 
+```python
+f = open("fichero.txt") 
+```
+Abrir archivo de lectura : 
+```python
+f = open("fichero.txt", "r") 
+```
+
+Abrir archivo para escribir desde cero : 
+```python
+f = open ("fichero.txt", "w") 
+
+Abrir archivo para añadir al final :
+```python
+f = open ("fichero.txt", "a") 
+```
+⚠️ Recordar siempre al terminar de utilizar un archivo tanto para lectura o escritura cerrarlo.
+ No hacerlo puede traer problemas para poder utilizarlo luego.
+
+Simplemente basta llamar a 
+```python
+f.close() 
+```
+Donde f es la variable en donde se almacenó el archivo 
+```python
+(ejemplo, f = open("fichero.txt", "r") )
+```
+
+#### Leer de un archivo
+Para leer del archivo, podemos usar las funciones f.readlines() y f.readline() 
+Lectura de todo el archivo de golpe : 
+```python
+datos = f.readlines() 
+(datos es una lista con todos los elementos del archivo)
+```
+Lectura de una línea completa : 
+```python
+dato = f.readline() 
+```
+(dato es una cadena con la primer línea del archivo)
+
+#### funciones para conocer donde está el cursor en
+el archivo y para ubicarlo en otro lugar
+```python
+archivo.tell() 
+archivo.seek() 
+```
+
+#### funciones con write
+```python
+función f.write(“texto”)
+f = open("arch.txt","w")
+f.write("Esto es un archivo de texto\n");
+f.write("Generado con python\n");
+f.write("no es hermoso?\n")
+f.close()
+```
 
 ----------------------------
 ### FUNCIONES
@@ -311,6 +371,7 @@ n = abs(-8) #devuelve un balor absoluto de -8
 n = round (5.6) #lo redondea al numero entero mas cercano
 n = len("fabian") #muestra cuantas caracteres tiene el string
 ```
+
 
 
 ---------------------------------
