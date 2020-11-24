@@ -390,7 +390,6 @@ w=random.randint(inicio,fin)
 
 ```
 
-
 ----------------------------
 ### FUNCIONES
 #### Funciones integradas
@@ -418,6 +417,27 @@ for character in 'hello':
     print(character)
 
 ```
+tamaño del caracter:
+```python
+a="Hola Mundo"
+len(a)
+```
+
+Recorrer una cadena:
+```python
+a="mi cadena"
+
+for caracter in a:
+    print(caracter)
+
+```
+otra forma:
+a="mi cadena"
+```python
+for caracter in a:
+    print(caracter, end="")
+```
+
 
 -----------------------------
 ### Funcionales matematicas
