@@ -456,14 +456,30 @@ for caracter in a:
 -----------------------------
 ### FUNCIONES
 ```python
-de f NOMBRE( LISTA DE PARAMETROS ) :
-SENTENCIAS
+def NOMBRE(LISTA_DE_PARAMETROS):
+    """DOCSTRING_DE_FUNCION"""
+    SENTENCIAS
+    RETURN [EXPRESION]
 ```
-ejemplo:
+Refs:
+- NOMBRE, es el nombre de la función.
+- LISTA_DE_PARAMETROS, es la lista de parámetros que puede recibir una función.
+- DOCSTRING_DE_FUNCION, es la cadena de caracteres usada para documentar la función.
+- SENTENCIAS, es el bloque de sentencias en código fuente Python que realizar cierta operación dada.
+- RETURN, es la sentencia return en código Python.
+- EXPRESION, es la expresión o variable que devuelve la sentencia return.
+
+ejemplo s/ retornar:
 ```python
-de f mostrarGuion ( ) :
-pr int ( "-" , end="" )
+def mostrarGuion ( ) :
+    print ( "-" , end="" )
 ```
+
+Ejemplo c/ retorno
+```python
+def resta(a, b):
+    return a - b
+```  
 
 Pasar variables por argumentos:
 ```python
