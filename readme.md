@@ -33,6 +33,11 @@ entonces podemos asingnar el tipo antes de poner el input
 numero = int(input("ingresar un numero"))
 ```
 cambiar el float por el tipo de variable, int, float string o boolean
+ejemplo:
+
+```python
+numero = str(input("ingresar un numero"))
+```
 
 ------------------------------
 ## Mostrar datos por pantalla
@@ -216,8 +221,12 @@ otra forma desde las ultimas actualizaciones de python:
 print(f"Hola {nombre} tienes {edad} años")
 ```
 
-
-
+lo mismo para convetir variables ya ingresadas usamos
+```python
+int();
+str();
+float();
+```
 ----------------------------
 ### CONDICIONALES
 #### Condicionales (If, else)
