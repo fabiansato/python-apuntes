@@ -1,7 +1,7 @@
-# Apuntes + Documentación Python🐍
+# Cheatsheet Python🐍
 
-¿Este es un cheatsheet mas de python? No. Este cheatshet tambien contiene un wiki con la documentación mas importante de python acá:
-[Wiki Documentación Python](https://github.com/fabiansato/python-cheatsheet/wiki "Documentación Python")
+## Instalar herramientas
+cmder
 
 ------------------------------
 ## Tipos de variables
@@ -16,14 +16,13 @@ numero = 10
 ```
 
 
-
 #### Datos booleanos
 ```python
 Valor = True
 Valor = False
 ```
 
-### entrada de datos 
+### Entrada de datos 
 ```python
 nombre = input("mensaje al usuario")
 ```
@@ -51,6 +50,13 @@ print("hola mundo")
 \n
 ```
 
+### Triple comillas dobles
+Se puede mostrar un string largo ejemplo:
+```python
+menu = """ 
+Bienvenido al conversor de monedas😊
+"""
+```
 #### imprimir el tipo de variable
 ```python
 print(type(nombrevariable))
@@ -150,7 +156,7 @@ and && (perador de multiplicacion logica)
 or  || (oeperador de suma logica)
 not
 
-#### operando AND
+#### Operador AND
 
 valor1 | AND | valor2  | Resultado
 ------------ | ------------- |------------- |------------- |
@@ -162,7 +168,7 @@ FALSE | AND | FALSE  | FALSE
 
 _Solamente basta un false para que el resultado sea false_
 
-#### operando OR
+#### Operador OR
 
 valor1 | AND | valor2  | Resultado
 ------------ | ------------- |------------- |------------- |
@@ -183,8 +189,8 @@ not(false) = true
 #### Prioridad de los operadores logicos
 
 1. NOT
-2- AND
-3- OR 
+2. AND
+3. OR 
 
 
 Ejemplo:
@@ -216,6 +222,7 @@ con funciones:
 ```python
 print("hola {} tienes {} años".format(nombre,edad)
 ```
+
 otra forma desde las ultimas actualizaciones de python:
 ```python
 print(f"Hola {nombre} tienes {edad} años")
@@ -232,13 +239,14 @@ float();
 #### Condicionales (If, else)
 ```python
 if resultado == 0:
-contenido
+	contenido
 else:
-contenido del else
+	contenido del else
 ```
 
 _podemos haer los valores aparte_
 ej:
+
 ```python
 vota=edad>=18 and edad<=70 and distancia<=500
 if vota:
@@ -252,7 +260,7 @@ else:
 ```python
 while(i<=n):
     suma=suma+i
-    #print(i,suma)
+    print(i,suma)
     i=i+1
 ```
 
@@ -348,14 +356,14 @@ dato = f.readline()
 ```
 (dato es una cadena con la primer línea del archivo)
 
-#### funciones para conocer donde está el cursor en
+#### Funciones para conocer donde está el cursor en
 el archivo y para ubicarlo en otro lugar
 ```python
 archivo.tell() 
 archivo.seek() 
 ```
 
-#### funciones con write
+#### Funciones con write
 ```python
 función f.write(“texto”)
 f = open("arch.txt","w")
@@ -430,7 +438,64 @@ n = round (5.6) #lo redondea al numero entero mas cercano
 n = len("fabian") #muestra cuantas caracteres tiene el string
 ```
 
+## Metodos array
 
+```python
+# transforma en mayuscula todo el string
+nombre.upper()
+# transforma en minúscula todo el string
+nombre.lower()
+
+# transforma la primera letra en mayuscula del string
+nombre.capitalize()
+
+# elimina espacios vacios adelante y atras del string
+nombre.strip()
+
+# remplaza una letra o caracter seleccionado por otro seleccionado en un string
+nombre.replace('o', 'a')
+
+# Tamaño del string
+len("mostrara el tamaño del texto")
+
+
+```
+
+# Arrays Slices
+```python
+nombre = "Fabian"
+print(nombre)
+
+
+
+print(nombre[0 : 3])
+# Fab
+
+ #Va desde el principio hasta antes de llegar del 3° índice. Cómo no hay ningún parámetro en el primer lugar, se interpreta que arranca desde el principio.
+print(nombre[:3])
+# Fab
+
+#Arranca desde el índice 1 hasta llegar antes del 7.
+print(nombre[1:7])
+# abian
+
+
+ #Arranca desde el índice 1 hasta llegar antes del 7, pero pasos de 2 en 2, ya que eso es lo que nos indica el 3! parámetro, el cual es 2.
+print(nombre[1:7:2])
+# ain
+
+
+ #Arranca desde el índice 1 hasta el final del string (al no haber ningún 2° parámetro, significa que va hasta el final), pero en pasos de 3 en 3.
+print(nombre[1::3])
+# aa
+
+
+  #Al no haber parámetro en los 2 primeros lugares, se interpreta que se arranca desde el inicio hasta el final, pero en pasos de 1 en 1 con la palabra al revés, porque es -1.
+print(nombre[::-1])
+# naibaF
+
+
+```
 
 ---------------------------------
 ### Strings de caracteres
@@ -465,6 +530,10 @@ for caracter in a:
 -----------------------------
 ### FUNCIONES
 ```python
+def funcion(parametro):
+```
+
+```python
 def NOMBRE(LISTA_DE_PARAMETROS):
     """DOCSTRING_DE_FUNCION"""
     SENTENCIAS
@@ -496,14 +565,90 @@ argumento = "Nunca digas nunca."
 imprimirDosVeces ( argumento )
 ```
 
+## Tupla
+```python
+mi_tupla = ()
+mi_tupla = (1,2,3)
+```
+
+### generar una tupla de un solo valor
+`mi_tupla = (1,)`
+
+### Acceder a un índice de la tupla
+
+```python
+mi_tupla = (1,2,3)
+mi_tupla[0] #1
+mi_tupla[1] #2
+mi_tupla[2] #3
+```
+
+### Reasignar una tupla
+
+```python
+mi_tupla = (1,2,3)
+mi_otra_tupla = (4,5,6)
+mi_tupla =+ mi_otra_tupla
+```
+
+### Métodos para trabajar con tuplas
+
+Usando el ejemplo:
+
+`mi_tupla = (1,1,1,2,2,3)`
+
+### Encontraremos los siguientes métodos:
+
+`mi_tupla.count(1)`
+    Devolverá 3, ya que el número 1 aparece 3 veces en la tupla.
+	
+`mi_tupla.index(3)`
+    Devolverá 5, índice de la primera instancia donde se encuentra un elemento.
+	
+`mi_tupla.index(1)`
+    Devolverá 0
+`mi_tupla.index(2)`
+    Devolverá 3.
 
 -----------------------------
-### LISTAS (strings)
-cracion de listas:
+### LISTAS (Arrays)
+### declaración de listas:
+```python
+my_lista = []
+my_lista = list()
+```
+### creacion de listas:
 ```python
 lista = [7; 3; 4; 6; 10]
 ```
-longitud de lista:
+
+### unir lista
+```python
+my_lista = [1]
+my_lista2 = [2,3,4]
+my_lista3 = my_lista + my_lista2
+my_lista3 # [1,2,3,4]
+```
+otra forma
+```python
+my_lista = [1]
+my_lista2 = [2,3,4]
+my_lista.extend(my_lista2) # [1,2,3,4]
+```
+### partir listas con slice
+```python
+my_lista = [1,2,3]
+my_lista[1:] = [2,3]
+```
+
+### multiplicar lista:
+```python
+my_lista = ['a']
+my_lista2 = my_lista * 5
+my_lista2 # ['a','a','a','a','a']
+```
+
+### longitud de lista:
 ```python
 len(lista)
 ```
@@ -511,7 +656,7 @@ agregar un elemento al final de la lista:
 ```python
 lista:append(2)
 ```
-quitar elementos de la lista:
+### Eliminar elementos de la lista:
 ```python
 lista.pop(3)
 #quita el tercer elemento de la lista empezando por 0
@@ -521,25 +666,154 @@ mostrar toda la lista por pantalla:
 print(lista)
 ```
 
-Recorrer listas:
+### Recorrer listas:
+codigo base para todos
 ```python
 animales = [''gato'', ''perro'', ''raton'']
 i = 0
+```
 #forma 1
+```python
 while (i < len(animales)):
-print(animales[i])
+	print(animales[i])
 i = i + 1
-#forma 2
-for i in range(len(animales)):
-print (animales[i])
-#forma 3
-for elemento in animales:
-print (elemento)
 ```
 
+#forma 2
+```python
+for i in range(len(animales)):
+	print (animales[i])
+```
 
------------------------------
-### MATRICES (arrays)
+#forma 3
+```python
+for elemento in animales:
+	print (elemento)
+```
+
+### ordenar lista
+```python
+my_lista = [2,1,5,4,3]
+my_lista = my_lista.sort()
+my_lista # [1,2,3,4,5]
+```
+
+## eliminar un elemento especifico en la lista
+```python
+my_lista = [1,2,3,4,5]
+del my_lista[0]
+my_lista # [2,3,4,5]
+```
+
+### eliminar si conocemos su valor
+```python
+my_lista = [1,2,3,4,5]
+my_lista.remove(3)
+my_lista #[1,2,4,5]
+```
+## saber que metodos hay dentro de un elemento en la lista
+```python
+my_lista = [1,2,3,4,5]
+dir(my_lista) # ['__add__', '__class__', '__contains__', ...
+```
+
+### modificar un elemento en la lista
+```python
+my_lista = [1,2,3,4,5]
+my_lista[0] = 100
+my_lista # [100,2,3,4,5]
+```
+
+### agregar un elemento al final de la lista
+```python
+my_lista = [1,2,3,4,5]
+my_lista.append(6)
+my_lista # [1,2,3,4,5,6]
+```
+
+### ordenar una lista
+```python
+my_lista = [2,5,1,3,4]
+my_lista.sort() #[1,2,3,4,5]
+```
+-------------
+
+### Métodos adicionales para listas
+`.sorted()`
+    También ordena como sort() pero modifica la lista inicial
+
+`clear()`
+    Vacía la lista
+
+`.count()`
+    Cuenta las veces que esta un elemento en lista
+
+`.index()`
+    Indica la posición donde esta un elemento de la lista
+	
+`.insert()`
+    Inserta un elemento en una posición dada ej: lista.insert(posición,item)
+	
+`.reverse()`
+    Le da la vuelta a una lista
+
+## Diccionarios (son como objetos)
+Los diccionarios en Python son una estructura de datos mutable las cuales almacenan diferentes tipos de valores sin darle importancia a su orden. Identifican a cada elemento por una clave (Key). Se escriben entre {}.
+
+Operaciones en diccionarios
+
+`.keys():` Retorna la clave de nuestro elemento.
+
+`.values():` Retorna una lista de elementos (valores del diccionario).
+
+`.items():` Devuelve lista de tuplas (primero la clave y luego el valor).
+
+`.clear():` Elimina todos los items del diccionario.
+
+`.pop(“n”):` Elimina el elemento ingresado.
+
+Cómo trabajar con diccionarios
+
+    Definir función principal
+
+```python
+def run():
+    # Defino el diccionario, agrego los valores.
+    mi_diccionario = {
+      'llave1' : 1,
+      'llave2' : 2,
+      'llave3' : 3,
+    }
+```
+
+    Imprimir las llaves del diccionario utilizando un bucle for. Con .keys()’ estamos llamando a imprimir las llaves, no los valores.
+
+```python
+for llave in mi_diccionario.keys():
+        print(llave)
+```
+
+    Imprimir los valores del diccionario empleando un bucle for. Con ’.values()’ estoy llamando a imprimir los valores.
+
+```python
+for valores in mi_diccionario.values():
+        print(valores)
+```
+
+    Imprimir las llaves y los valores usando ‘.items()’. Para esto, coloco las variables llave e items.
+
+```python
+for llave, items in 			mi_diccionario.items():
+        print("La llave: '" + llave + "' contiene el item: " + str(items))
+
+if __name__ == '__main__':
+    run()
+```
+
+Aporte creado por: Rusbel Bermúdez, Ignacio Escudero.
+
+
+### MATRICES (Matrix)
 Las matrices en Python son listas de listas.
 se escriben así:
 ```python
@@ -552,28 +826,29 @@ numeros = [[1,2,4],[4,3,2],[9,8,7],[6,4,3],[5,6,8]]
 	print(numeros[3][0]) # imprime 6
 	print(numeros[4][3]) # error
 ```
-También podemos imprimir la matriz entera:
-````python
+
+### También podemos imprimir la matriz entera:
+```python
 print(numeros)
 print(numeros[2])
 ```
-saber la longitud de una variable
+
+### Saber la longitud de una variable
 ```python
 longitud = len(numeros)
 print (longitud) #imprime 5
 print(len(numeros[2])) #imprime 3
 ```
-Agregar datos a un array
+
+### Agregar datos a un array
 ```python
 #por ejemplo
 numeros[2].append(5) 
 agrega un 5 al final de la lista 2
 ```
 
-quitar datos en un array:
+### Quitar datos en un array:
 ```python
 numeros[3].pop(1) 
 elimina la posición 1 de la lista 3
 ```
-
-
